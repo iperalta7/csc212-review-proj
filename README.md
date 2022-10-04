@@ -27,3 +27,30 @@ Repository for URI's CSC 212 review project
 - Required Structures
   - At least one `Class` structure
   - Use `vectors` over `arrays`
+
+**Planning** 
+- Review syllabus
+  - 10 labs
+    - 50 pts total
+    - 5 pts each
+  - 5 Programming Assignments 
+    - 500 pts total 
+    - 100 pts each
+  - Term Project 
+      - 350 pts total
+  - final exam 
+    - 100 pts
+  - Review project 
+    - 30 pts
+
+Late Policy: 
+  10% off per day (3 days max)
+
+1. get lab grades
+2. get programming assignment grades
+3. get term project grade
+4. get final exam grade
+5. get reveiw project grade
+
+Do we want to return a current grade based off what is currently submitted?
+or based off everything in the course?
