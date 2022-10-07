@@ -4,7 +4,8 @@ Repository for URI's CSC 212 review project
 **Group members**
 1. Isaiah Peralta
 2. Cano Morales
-3. TBD
+3. Damien Johnson
+4. Edniel Campos
 
 - Summary
   - Note: add later a brief summary of the project and github repo address (with allowed access for viewing) for member contributions _(most easily shown through commits in the repo where your project lives)_
