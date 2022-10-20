@@ -1,5 +1,5 @@
 # CSC 212 Review Project
-Repository for URI's CSC 212 review project
+Repository for our Groups CSC 212 review project implementing a grade calculator
 
 ## Group members
 1. Isaiah Peralta 
