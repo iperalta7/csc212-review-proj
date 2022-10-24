@@ -5,11 +5,15 @@
 
 class Grade {
 private:
-
-
+    double grade; 
+    
 public:
-
-
+    
+    double calculate_grade();
+    double get_review_proj();
+    
+    double term_proj();
+    
 
 };
 
