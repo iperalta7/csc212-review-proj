@@ -9,14 +9,16 @@ private:
     double review_grade = 0;
     double lab_grade = 0;
     double assignment_grade = 0;
+    double term_proj_grade = 0;
+    double exam_grade = 0; 
     
 public:
     
     double calculate_grade();
-    double review_proj();
-    double lab_grade();
-    double term_proj();
-    double assignment_grade();
+    double get_review();
+    double get_lab();
+    double get_term_proj();
+    double get_assignment();
     
 
 };

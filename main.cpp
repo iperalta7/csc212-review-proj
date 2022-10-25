@@ -34,7 +34,7 @@ call main grade calculator member function
    - ask if did review project (user input)
     - return points given 
 
-  - if current grade > 90 or 92 i dont remeber
+  - if current grade > 90
      - grade for final exam = 100 (exempt)
     else 
       - user input grade for finale exam
