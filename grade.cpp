@@ -46,7 +46,7 @@ void Grade::get_assignment(){
      double a_grade; 
      bool x = false; 
      while (x == false){
-        std::cout<< "How many points total points did you get in assignments? ";
+        std::cout<< "How many points total points did you get in assignments? (500 points max) ";
         std:: cin>> a_grade; 
         if( a_grade >= 0 && a_grade <= 500){
             x = true; 
