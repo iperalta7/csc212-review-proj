@@ -11,12 +11,21 @@ double Grade::calculate_grade(){
     this->lab_grade = get_lab();
 
     this->final_grade = (lab_grade + assignment_grade + term_proj_grade + review_grade);
+
     if (this->final_grade >= 900){
         std::cout << "Exempt from final exam" << std::endl;
-        this->exam_grade = 100;
+        this->possible_points = 900;
     }else{
         std::cout << "Not Exempt from final exam" << std::endl;
-        std  
+        std::cout << "What did you get on the final exam? (out of 100)";
+        std::cin >> this->final_grade;
+    }
+
+    this->final_grade += this->review_grade;
+    
+    std::cout << "Your final grade for CSC 212 is " << this->final_grade << std::endl;
+    if(this->final_grade >= 90){
+        
     }
 }
 
@@ -25,7 +34,7 @@ double Grade::get_review(){
     std::cin >> g >> std::endl;
     g = g * (30/10);
     return g;
-}
+};
 
 double Grade::get_lab(){
     double get_lab_grade;
@@ -33,10 +42,15 @@ double Grade::get_lab(){
     while(x = false){
         std::cout << "How many points did you get in the labs? (50 points in total)";
         std::cin >> get_lab_grade;
-        if
+        if(get_lab_grade >= 0 && get_lab_grade <= 50){
+            x = true;
+        }
+        else{
+            std::cout << "Invalid number for points";
+        }
     }
-    
-}
+    return get_lab_grade;
+};
 
 double Grade::get_assignment(){
      double assignment_grade; 
@@ -44,12 +58,16 @@ double Grade::get_assignment(){
      while (x = false){
         std::cout<< "How many points total points did you get in assignment";
         std:: cin>> assignment_grade; 
-        if( assignment_grade >= 0 && assignment_grade <=   )
-     
-     
-    
-}
-    
+        if( assignment_grade >= 0 && assignment_grade <= 500){
+            x = true; 
+        }
+        else { 
+            std::cout<< "Invalid number for points";
+        }
+     }
+     return assignment_grade;  
+};
+
 double Grade::get_term_proj(){
     
     double tproj_grade;
@@ -59,7 +77,8 @@ double Grade::get_term_proj(){
         std::cin >> tproj_grade;
         if(tproj_grade >= 0 && tproj_grade <= 350){
             x = true;
-        }else{
+        }
+        else{
             std::cout << "Invalid number for points";
         }
     } 
