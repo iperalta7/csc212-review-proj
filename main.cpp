@@ -12,15 +12,16 @@ int main(){
   std::vector<int> Edniel;
   std::vector<int> Damien;
 
-  //main 
+  //create object to grade class
   Grade calc;
   
-
-
-
+  //call member function that does main calculations and call to other helper functions
+  calc.calculate_grade();
 
   return 0;
 }
+
+//Psuedocode:
 
 /*
 create grade object
