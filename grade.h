@@ -4,21 +4,21 @@
 #define GRADE_H
 
 class Grade {
+
 private:
-    double final_grade = 0;
-    double review_grade = 0;
-    double lab_grade = 0;
-    double assignment_grade = 0;
-    double term_proj_grade = 0;
-    double exam_grade = 0; 
+
+    int possible_points = 1000;
+    double final_grade; double review_grade; double lab_grade; double assignment_grade; double term_proj_grade; double exam_grade; 
     
 public:
-    
-    double calculate_grade();
-    double get_review();
-    double get_lab();
-    double get_term_proj();
-    double get_assignment();
+    Grade();
+    ~Grade();
+    void calculate_grade();
+    void get_review();
+    void get_lab();
+    void get_term_proj();
+    void get_assignment();
+
     
 
 };

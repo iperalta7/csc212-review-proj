@@ -3,77 +3,66 @@
 #include "grade.h"
 #include <iostream>
 #include <vector>
+#include <string>
 
-double Grade::calculate_grade(){
-    this->term_proj_grade = get_term_proj();
-    this->review_grade = get_review();
-    this->assignment_grade = get_assignment();
-    this->lab_grade = get_lab();
-
-    this->final_grade = (lab_grade + assignment_grade + term_proj_grade + review_grade);
-
-    if (this->final_grade >= 900){
-        std::cout << "Exempt from final exam" << std::endl;
-        this->possible_points = 900;
-    }else{
-        std::cout << "Not Exempt from final exam" << std::endl;
-        std::cout << "What did you get on the final exam? (out of 100)";
-        std::cin >> this->final_grade;
-    }
-
-    this->final_grade += this->review_grade;
-    
-    std::cout << "Your final grade for CSC 212 is " << this->final_grade << std::endl;
-    if(this->final_grade >= 90){
-        
-    }
-}
-
-double Grade::get_review(){
-    int g;
-    std::cin >> g >> std::endl;
-    g = g * (30/10);
-    return g;
+//default constructor
+Grade::Grade(){
 };
 
-double Grade::get_lab(){
+//default deconstructor
+Grade::~Grade(){
+};
+
+//helper function that will ask user input for the ponits they received in review project
+void Grade::get_review(){
+    int review;
+    std::cout << "How many points did you get on the review term? (Out of 30) " << std::endl;
+    std::cin >> review; 
+    std::cout << "\n";
+    review = review;
+    this->review_grade = review;
+};
+
+//helper function that will ask user input for the points they received in the Labs
+
+void Grade::get_lab(){
     double get_lab_grade;
     bool x = false;
-    while(x = false){
-        std::cout << "How many points did you get in the labs? (50 points in total)";
+    while(x == false){
+        std::cout << "How many points did you get in the labs? (50 points in total) ";
         std::cin >> get_lab_grade;
         if(get_lab_grade >= 0 && get_lab_grade <= 50){
             x = true;
         }
         else{
-            std::cout << "Invalid number for points";
+            std::cout << "Invalid number for points. Please input again" << std::endl;
         }
     }
-    return get_lab_grade;
+
+    this->lab_grade = get_lab_grade;
 };
 
-double Grade::get_assignment(){
-     double assignment_grade; 
+void Grade::get_assignment(){
+     double a_grade; 
      bool x = false; 
-     while (x = false){
-        std::cout<< "How many points total points did you get in assignment";
-        std:: cin>> assignment_grade; 
-        if( assignment_grade >= 0 && assignment_grade <= 500){
+     while (x == false){
+        std::cout<< "How many points total points did you get in assignments? (500 points max) ";
+        std:: cin>> a_grade; 
+        if( a_grade >= 0 && a_grade <= 500){
             x = true; 
         }
         else { 
             std::cout<< "Invalid number for points";
         }
      }
-     return assignment_grade;  
+     this->assignment_grade = a_grade;  
 };
 
-double Grade::get_term_proj(){
-    
+void Grade::get_term_proj(){
     double tproj_grade;
     bool x = false;
     while (x == false){
-        std::cout << "How many points did you get in the final term project? (350 points in total)";
+        std::cout << "How many points did you get in the final term project? (350 points in total): ";
         std::cin >> tproj_grade;
         if(tproj_grade >= 0 && tproj_grade <= 350){
             x = true;
@@ -82,5 +71,57 @@ double Grade::get_term_proj(){
             std::cout << "Invalid number for points";
         }
     } 
-    return tproj_grade;
+    //change private data to current grade
+    this->term_proj_grade = tproj_grade;
+};
+
+void Grade::calculate_grade(){
+    std::string letter; //used to save letter grade
+
+    get_lab();
+    get_assignment();
+    get_term_proj();
+
+    this->final_grade = (lab_grade + assignment_grade + term_proj_grade);
+
+    if (((this->final_grade)/900) >= 0.90){
+        std::cout << "Exempt from final exam" << std::endl;
+        this->possible_points = 900;
+    }else{
+        std::cout << "Not Exempt from final exam" << std::endl;
+        std::cout << "What did you get on the final exam? (out of 100) ";
+        std::cin >> this->exam_grade;
+        this->final_grade += this->exam_grade;
+    }
+
+    get_review();
+    this->final_grade += this->review_grade;
+    
+    double Final = (this->final_grade/this->possible_points)*100;
+    
+    std::cout << "Your final grade for CSC 212 is " << Final << std::endl;
+    if((Final) >= 95){
+        letter = "A";
+    }else if((Final) >= 90){
+        letter = "A";
+    }else if((Final) >= 87){
+        letter = "B+";
+    }else if((Final) >= 83){
+        letter = "B";
+    }else if((Final) >= 80){
+        letter = "B-";
+    }else if((Final) >= 77){
+            letter = "C+";
+    }else if((Final) >= 73){
+            letter = "C";
+    }else if((Final) >= 70){
+        letter = "C-";
+    }else if((Final) >= 67){
+        letter = "D+";
+    }else if((Final) >= 60){
+        letter = "D";
+    }else if((Final) >= 0){
+        letter = "F";
+    }
+    std::cout << "Your letter grade is: " << letter << std::endl;
 };
