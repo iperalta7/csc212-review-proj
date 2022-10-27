@@ -103,7 +103,7 @@ void Grade::calculate_grade(){
     if((Final) >= 95){
         letter = "A";
     }else if((Final) >= 90){
-        letter = "A";
+        letter = "A-";
     }else if((Final) >= 87){
         letter = "B+";
     }else if((Final) >= 83){

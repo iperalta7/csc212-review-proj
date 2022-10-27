@@ -1,5 +1,5 @@
 # CSC 212 Review Project
-Repository for our Groups CSC 212 review project implementing a grade calculator
+Repository for our Groups CSC 212 review project implementing a grade calculator. [(Github Repo Link)](https://github.com/iperalta7/csc212-review-proj.git)
 
 ## Group members
 1. Isaiah Peralta 
@@ -71,5 +71,8 @@ call main grade calculator member function
 ```
 
 ## Features
-
+  Input: Our program takes in the number of points for each section of the syllabus. 
+      Ex: User inputs the points they received for all the labs ( out of 50)
+  Output: Our program outputs the 
 ## Instructions 
+  1. 
