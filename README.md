@@ -1,29 +1,21 @@
 # CSC 212 Review Project
 Repository for our Groups CSC 212 review project implementing a grade calculator. [(Github Repo Link)](https://github.com/iperalta7/csc212-review-proj.git)
-
-## Group members
+### Group members
 1. Isaiah Peralta 
 2. Cano Morales
 3. Damien Johnson
 4. Edniel Campos
 
-## Summary 
-  - Note: add later a brief summary of the project and github repo address (with allowed access for viewing) for member contributions _(most easily shown through commits in the repo where your project lives)_
-  
-    - Documentation  
-      - `readme.md`, includes:
-        - describe features of the algorithm
-          - 'what input can it take in'
-          - 'what is/are the output(s) you can receive back?'
-          - 'why was development like this important to your group?'
-        - clear, conscientious comments embedded within the your code
-        - provide detailed instructions how to compile your algorithm, including:
-          - how to input data
-          - how to compile each/any option from your feature set
 
-  ## Datasets
-- Include a mock dataset for each group member
-- *Note: hardcoding datasets is allowed as the use of databases is not required/desired for this project.*
+### Summary 
+  We created a grade calculator specific to CSC 212. Although it can be altered for other courses. Our program uses URI's CSC 212 Syllabus straight from Brightspace to create the specifications and calculate the total course grade for the semester. Our program gets its input from user input. We did not feel that it was in the user's interest to have their data included inside the console nor by command arguments. Most online grade calculators (which many of us have probably used) take in their data from user input. We collaborated on this after getting a 3 hour rental for a group study at the URI Library. Most of the basic programming was done in that time. But, many updates and adjustments were still done after further recommendations through our discord group chat. We felt it was best to use a Grade class that does most of this work. Although it was required, it helped cleaned up the bulk of our code. Getting each section of the syllabus broke down our code into seprerate problems, making our colloboration more compatible and nice work-flow. The output (might be obvious) shows our user what grade that receive in number form and a letter grade. 
+  
+  Note: We did not feel it was best to use letter's or numbers out of 100 as the input. One lab is only worth 5 points. One assignment is worth 100 points. And, the term project is worth 350 points. The input and math comes out to be more smooth in our opinion. 
+ 
+## Instructions 
+  1. Compile using `g++ main.cpp grade.cpp -o calc.exe`
+  2. Use the command in terminal `./calc.exe` to begin figuring out if you passed or failed. 
+  3. The program will ask for your input, with a question format. The output "->" indicates you need to input the total points you received. 
 
 ## Planning stage 
 - Review syllabus
@@ -70,9 +62,3 @@ call main grade calculator member function
  return addition of all percentages to get whole grade for CSC 212 
 ```
 
-## Features
-  Input: Our program takes in the number of points for each section of the syllabus. 
-      Ex: User inputs the points they received for all the labs ( out of 50)
-  Output: Our program outputs the 
-## Instructions 
-  1. Compile using `g++ main.cpp grade.cpp -o calc.exe'
