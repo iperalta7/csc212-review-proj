@@ -75,4 +75,4 @@ call main grade calculator member function
       Ex: User inputs the points they received for all the labs ( out of 50)
   Output: Our program outputs the 
 ## Instructions 
-  1. 
+  1. Compile using `g++ main.cpp grade.cpp -o calc.exe'
