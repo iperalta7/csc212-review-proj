@@ -3,16 +3,19 @@
 #ifndef GRADE_H
 #define GRADE_H
 
+#include <string>
 class Grade {
 
 private:
 
-    int possible_points = 1000;
-    double final_grade; double review_grade; double lab_grade; double assignment_grade; double term_proj_grade; double exam_grade; 
+    double possible_points = 1000;
+    double final_grade; double review_grade; double lab_grade; double assignment_grade; double term_proj_grade; double exam_grade; std::string letter;
     
 public:
     Grade();
     ~Grade();
+    std::string get_letter(double &Final);
+    void get_fin_exam();
     void calculate_grade();
     void get_review();
     void get_lab();
