@@ -13,7 +13,7 @@ Repository for our Groups CSC 212 review project implementing a grade calculator
   Note: We did not feel it was best to use letter's or numbers out of 100 as the input. One lab is only worth 5 points. One assignment is worth 100 points. And, the term project is worth 350 points. The input and math comes out to be more smooth in our opinion. 
  
 ## Instructions 
-  1. Compile using `g++ main.cpp grade.cpp -o calc.exe`
+  1. Compile using `g++ main.cpp grade.cpp -o calc`
   2. Use the command in terminal `./calc.exe` to begin figuring out if you passed or failed. 
   3. The program will do the rest of the job. It will ask for your input, with a question format.  The output "->" indicates you need to input the total points you received. It's up to input whatever you'd like to figure out your grade. 
 
