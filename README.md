@@ -15,7 +15,7 @@ Repository for our Groups CSC 212 review project implementing a grade calculator
 ## Instructions 
   1. Compile using `g++ main.cpp grade.cpp -o calc.exe`
   2. Use the command in terminal `./calc.exe` to begin figuring out if you passed or failed. 
-  3. The program will ask for your input, with a question format. The output "->" indicates you need to input the total points you received. 
+  3. The program will do the rest of the job. It will ask for your input, with a question format.  The output "->" indicates you need to input the total points you received. It's up to input whatever you'd like to figure out your grade. 
 
 ## Sample Dataset 
 
