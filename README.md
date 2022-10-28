@@ -21,10 +21,10 @@ Repository for our Groups CSC 212 review project implementing a grade calculator
 
 | Name | Lab Grades | Assignment Grades | Term Project Grades | Exam Grades | Review Project Grades |
 | --- | ----------- | ----------------- | ------------------- | ----------- | ---------------------- |
-| Damien | 50 | 1 - (100)  2 - (100)  3 - (100)  4 - (100)  5 - (100) | 350 | 100 - Exempt | 30 |  
-| Edniel | Text | | | | | | 
-| Isaiah | Text | | | | | |
-| Cano | Text | | | | | |
+| Damien | 50 | **1** - (100)  **2** - (100)  **3** - (100)  **4** - (100)  **5** - (100) | 350 | Exempt | 30 |  
+| Edniel | 0 | **1** - (0)  **2** - (100)  **3** - (100)  **4** - (100)  **5** - (100) | 250 | 95 | 30 | 
+| Isaiah | 50 | **1** - (100)  **2** - (100)  **3** - (100)  **4** - (0)  **5** - (100) | 350 | Exempt | 30 | 
+| Cano | 50 | **1** - (0)  **2** - (0)  **3** - (100)  **4** - (100)  **5** - (100) | 250 | 83 | 30 | 
 
 ## Planning stage 
 - Review syllabus
