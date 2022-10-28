@@ -17,6 +17,15 @@ Repository for our Groups CSC 212 review project implementing a grade calculator
   2. Use the command in terminal `./calc.exe` to begin figuring out if you passed or failed. 
   3. The program will ask for your input, with a question format. The output "->" indicates you need to input the total points you received. 
 
+## Sample Dataset 
+
+| Name | Lab Grades | Assignment Grades | Term Project Grades | Exam Grades | Review Project Grades |
+| --- | ----------- | ----------------- | ------------------- | ----------- | ---------------------- |
+| Damien | 50 | 1 - (100)  2 - (100)  3 - (100)  4 - (100)  5 - (100) | 350 | 100 - Exempt | 30 |  
+| Edniel | Text | | | | | | 
+| Isaiah | Text | | | | | |
+| Cano | Text | | | | | |
+
 ## Planning stage 
 - Review syllabus
   - 10 labs
