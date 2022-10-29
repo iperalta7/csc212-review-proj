@@ -26,6 +26,9 @@ Repository for our Groups CSC 212 review project implementing a grade calculator
 | Isaiah | 50 | **1** - (100)  **2** - (100)  **3** - (100)  **4** - (0)  **5** - (100) | 350 | 90 | 30 | 
 | Cano | 40 | **1** - (0)  **2** - (0)  **3** - (100)  **4** - (100)  **5** - (100) | 250 | 83 | 30 | 
 
+## Video Walkthrough 
+https://www.youtube.com/watch?v=bY3a4xScw7U
+
 ## Planning stage 
 - Review syllabus
   - 10 labs
